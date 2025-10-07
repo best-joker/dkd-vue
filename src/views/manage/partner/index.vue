@@ -133,7 +133,7 @@
 
 <script setup name="Partner">
 import { listPartner, getPartner, delPartner, addPartner, updatePartner, resetPartnerPassword } from "@/api/manage/partner";
-
+import { listRegion } from "@/api/manage/region";
 const { proxy } = getCurrentInstance();
 
 const partnerList = ref([]);
