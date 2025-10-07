@@ -42,3 +42,12 @@ export function delPartner(id) {
     method: 'delete'
   })
 }
+
+
+// 更改合作商密码
+export function resetPartnerPassword(id) {
+  return request({
+    url: '/manage/partner/resetPassword/' + id,
+    method: 'put'
+  })
+}
