@@ -75,9 +75,9 @@
       <el-table-column type="selection" width="55" align="center" />
       <el-table-column label="序号" type="index" align="center" prop="id" width="50"/>
       <el-table-column label="点位名称" align="center" prop="nodeName" />
-      <el-table-column label="区域ID" align="center" prop="regionId" show-overflow-tooltip/>
+      <el-table-column label="所在区域" align="center" prop="region.regionName" show-overflow-tooltip/>
       <el-table-column label="商圈类型" align="center" prop="businessType" show-overflow-tooltip/>
-      <el-table-column label="合作商ID" align="center" prop="partnerId" show-overflow-tooltip/>
+      <el-table-column label="合作商" align="center" prop="partner.partnerName" show-overflow-tooltip/>
       <el-table-column label="详细地址" align="left" prop="address" show-overflow-tooltip/>
       <el-table-column label="操作" align="center" class-name="small-padding fixed-width">
         <template #default="scope">
